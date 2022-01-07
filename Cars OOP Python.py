@@ -3,7 +3,7 @@
 # Main Vehicle class
 
 class Vehicle:
-    # Class Attribute
+    # Class Attribute / Default color will be white.
     color = "White"
 
     def __init__(self,name,max_speed,mileage):
@@ -26,7 +26,7 @@ class Car(Vehicle):
     pass
     
 
-# Setting the information into the Bus class whihc inherits the attributes from the Vehicle class. You have to call the different inheritances to print them. NB!!!
+# Setting the information into the Bus class which inherits the attributes from the Vehicle class. You have to call the different inheritances to print them. NB!!!
 BusX = Bus("School Volvo",120,200000)
 BusX.School_name = "Bridgeton"
 BusX.color = "Red"
@@ -39,6 +39,5 @@ BusX.color = "Red"
 print("Vehicle color: "+BusX.color+"\nVehicle name: "+BusX.name+"\n"+"Vehicle speed: ",BusX.max_speed,"\nVehicle mileage: ",BusX.mileage,"\nSchool name: "+BusX.School_name)
 print(BusX.seating_capacity(100))
 
-#BusX.School_name, BusX.color = "Bridgeton", "Red"
 
     
